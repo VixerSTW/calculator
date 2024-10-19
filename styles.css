@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9e6f1; /* Light amethyst background */
+}
+
+.calculator {
+    background: white; /* White background for the calculator */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    padding: 20px;
+    width: 320px; /* Slightly wider */
+}
+
+#display {
+    width: 100%;
+    height: 60px; /* Taller display */
+    font-size: 28px; /* Larger text */
+    text-align: right;
+    margin-bottom: 20px; /* More space below */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7; /* Light gray for display */
+    padding: 10px; /* Padding inside the display */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    height: 60px; /* Button height */
+    font-size: 18px; /* Button text size */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* Rounded button corners */
+    background-color: #9966cc; /* Amethyst color */
+    color: white; /* White text */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7a4e99; /* Darker shade of amethyst for hover effect */
+}
